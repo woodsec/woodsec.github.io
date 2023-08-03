@@ -1,0 +1,97 @@
+baseURL: "http://www.woodsec.uk/"
+title: Woodsec
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: false
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Woodsec
+  description: "Cyber Security Services"
+  keywords: [Cyber Security, Penetration Testing, Red Teaming]
+  defaultTheme: light
+  disableThemeToggle: true
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: false
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    favicon: "logo_mono_64.png"
+    favicon16x16: "logo_mono_16.png"
+    favicon32x32: "logo_mono_32.png"
+    apple_touch_icon: "logo_mono_64.png"
+    safari_pinned_tab: "logo_mono_64.png"
+
+  profileMode:
+    enabled: true
+    title: Woodsec
+    subtitle: "Cyber Security Services"
+    imageUrl: "logo_mono_bg.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: woodsec_logo
+    buttons:
+      - name: Services
+        url: services
+      - name: Contact
+        url: contact
+
+  socialIcons:
+    - name: email
+      url: "mailto:hello@woodsec.uk?subject=Hello"
+    - name: linkedin
+      url: "https://linkedin.com/company/woodsec"
+    - name: github
+      url: "https://github.com/woodsec"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+menu:
+  main:
+    - identifier: services
+      name: Services
+      url: /services/
+      weight: 10
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
